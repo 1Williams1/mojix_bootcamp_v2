@@ -1,9 +1,11 @@
 import streamlit as st
 
-import Image
+from PIL import Image
+import requests
 
-myImage = Image.open("https://miro.medium.com/max/700/1*5IFgojJ4nU8f0YKTcjWDrg.jpeg");
-myImage.show();
+im = Image.open(requests.get('https://miro.medium.com/max/700/1*5IFgojJ4nU8f0YKTcjWDrg.jpeg', stream=True).raw)
+
+
 
 st.write("1. Walrus operator")
 
