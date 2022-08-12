@@ -5,7 +5,7 @@ import requests
 
 im = Image.open(requests.get('https://miro.medium.com/max/700/1*5IFgojJ4nU8f0YKTcjWDrg.jpeg', stream=True).raw)
 
-
+im.show();
 
 st.write("1. Walrus operator")
 
