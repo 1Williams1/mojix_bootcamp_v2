@@ -9,3 +9,5 @@ if(l := len(mylist) > 2):
 st.write("mylist = [1,2,3]")
 st.write("if(l := len(mylist) > 2):")
 st.write("print(l)")
+st.write("Output")
+st.write("3")
