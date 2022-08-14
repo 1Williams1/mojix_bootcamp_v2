@@ -16,6 +16,7 @@ st.markdown('''
 )
 
 st.write("""
+
 The compactness of Python can make a developer’s life a lot easier when writing
 lines and lines of code. But there are some lesser-known Python tricks that can 
 surprise you with their amazing capabilities.
@@ -48,3 +49,16 @@ string.split()'''
 st.code(code, language='python')
 st.markdown("""<strong>Output</strong>""",unsafe_allow_html=True)
 st.code("[‘hello’, ‘world’]")
+
+st.write(""" ## 3. Reversing a string
+If you want to reverse a given string, you can do that with only one line of code using
+the negative indexing of the string.
+""")
+st.markdown(""" <h3>Example </h3>""",unsafe_allow_html=True)
+code = '''str=”hello world!”
+a=str[::-1]
+print(a)'''
+st.code(code, language='python')
+st.markdown("""<strong>Output</strong>""",unsafe_allow_html=True)
+st.code("!dlrow olleh")
+
