@@ -27,7 +27,7 @@ will definitely save you some valuable time.
 
 st.write(" ## 1. Walrus operator")
 
-st.markdown(""" <h2>Example </h2>
+st.markdown("""<h3>Example </h3>
 If we want to check and print the length of a list:""",unsafe_allow_html=True)
 
 code = '''mylist = [1,2,3]
@@ -35,7 +35,7 @@ if(l := len(mylist) > 2):
     print(l)'''
 st.code(code, language='python')
 
-st.write("Output")
+st.markdown("Output",unsafe_allow_html=True)
 st.code("3")
 
 st.write(""" ## 2. Splitting a string
@@ -46,5 +46,5 @@ st.markdown(""" <h3>Example </h3>""",unsafe_allow_html=True)
 code = '''string = “hello world”
 string.split()'''
 st.code(code, language='python')
-st.write("Output")
+st.markdown("""Output""",unsafe_allow_html=True)
 st.code("[‘hello’, ‘world’]")
