@@ -35,7 +35,7 @@ if(l := len(mylist) > 2):
     print(l)'''
 st.code(code, language='python')
 
-st.markdown("Output",unsafe_allow_html=True)
+st.markdown("<strong>Output</strong>",unsafe_allow_html=True)
 st.code("3")
 
 st.write(""" ## 2. Splitting a string
@@ -46,5 +46,5 @@ st.markdown(""" <h3>Example </h3>""",unsafe_allow_html=True)
 code = '''string = “hello world”
 string.split()'''
 st.code(code, language='python')
-st.markdown("""Output""",unsafe_allow_html=True)
+st.markdown("""<strong>Output</strong>""",unsafe_allow_html=True)
 st.code("[‘hello’, ‘world’]")
