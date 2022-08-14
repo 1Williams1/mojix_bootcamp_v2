@@ -15,8 +15,15 @@ st.markdown('''
     unsafe_allow_html=True
 )
 
-""" c1 = st.columns([8])
-c1.caption("https://miro.medium.com/max/700/1*5IFgojJ4nU8f0YKTcjWDrg.jpeg") """
+st.write("""
+The compactness of Python can make a developer’s life a lot easier when writing
+lines and lines of code. But there are some lesser-known Python tricks that can 
+surprise you with their amazing capabilities.
+
+In today’s article, I will discuss 10 Python tips and tricks that will be really
+helpful for beginners to write more compact code. Knowing these tips and tricks 
+will definitely save you some valuable time.
+""")
 
 st.write("1. Walrus operator")
 
