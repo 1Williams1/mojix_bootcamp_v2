@@ -31,7 +31,8 @@ st.info(" Example")
 
 code = '''mylist = [1,2,3]
 if(l := len(mylist) > 2):
-    print(l)
-Output
-    3 '''
+    print(l)'''
 st.code(code, language='python')
+
+st.write("Output")
+st.code("3")
