@@ -1,12 +1,19 @@
 import streamlit as st
+from PIL import Image
+
 
 st.write(""" ## 10 Cool Beginner Python Tricks That Will Make Your Life Easier
 
  Simple but effective tips for every python lovers
 
 """)
-c1 = st.columns([8])
-c1.caption("https://miro.medium.com/max/700/1*5IFgojJ4nU8f0YKTcjWDrg.jpeg")
+
+image = Image.open('https://miro.medium.com/max/700/1*5IFgojJ4nU8f0YKTcjWDrg.jpeg')
+
+st.image(image, caption='Sunrise by the mountains')
+
+""" c1 = st.columns([8])
+c1.caption("https://miro.medium.com/max/700/1*5IFgojJ4nU8f0YKTcjWDrg.jpeg") """
 
 st.write("1. Walrus operator")
 
