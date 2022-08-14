@@ -1,11 +1,11 @@
 import streamlit as st
 
-from PIL import Image
-import requests
+st.write(""" ## 10 Cool Beginner Python Tricks That Will Make Your Life Easier
 
-im = Image.open(requests.get('https://miro.medium.com/max/700/1*5IFgojJ4nU8f0YKTcjWDrg.jpeg', stream=True).raw)
+#Simple but effective tips for every python lovers
 
-im.show();
+""")
+
 
 st.write("1. Walrus operator")
 
@@ -16,3 +16,6 @@ st.write("Output")
 st.write(3)
 
 
+"""Nota solo streamlit no python
+
+tutorial de python usando streamlit"""
