@@ -90,3 +90,32 @@ st.markdown("""<strong>Output</strong>""",unsafe_allow_html=True)
 st.code("""red apple
 yellow banana
 green mango""")
+st.write("""
+The zip() function can also be used for combining two lists into a dictionary. This method
+can be really helpful while grouping data from the list.
+""")
+st.markdown(""" <h3>Example </h3>""",unsafe_allow_html=True)
+code = '''students = [“Rajesh”, “kumar”, “Kriti”]
+marks = [87, 90, 88]
+dictionary = dict(zip(students, marks))
+print(dictionary)'''
+st.code(code, language='python')
+st.markdown("""<strong>Output</strong>""",unsafe_allow_html=True)
+st.code("""{‘Rajesh’: 87, ‘kumar’: 90, ‘Kriti’: 88}""")
+
+st.write(""" ## 6. Assigning multiple list values to a variable
+If you want to assign some specific values of a list to a variable and all the remaining
+values to another variable in a list format, you can use the following technique:
+""")
+st.markdown(""" <h3>Example </h3>""",unsafe_allow_html=True)
+code = '''mylist = [1,2,3,4,5]
+a,*b = mylist
+print(f”a =”,a)
+print(f”b =”,b)'''
+st.code(code, language='python')
+st.markdown("""<strong>Output</strong>""",unsafe_allow_html=True)
+st.code("""a = 1
+b = [2, 3, 4, 5]""")
+st.write("""
+This process is also called list unpacking and you can apply this method for more than 
+2 variables also!""")
