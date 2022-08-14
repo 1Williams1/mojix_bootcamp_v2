@@ -1,6 +1,6 @@
 import streamlit as st
 
-
+c1, c2 = st.columns([5, 5])
 
 st.write(""" # 10 Cool Beginner Python Tricks That Will Make Your Life Easier
 
@@ -26,29 +26,29 @@ helpful for beginners to write more compact code. Knowing these tips and tricks
 will definitely save you some valuable time.
 """)
 
-st.write(" ## 1. Walrus operator")
+c1.write(" ## 1. Walrus operator")
 
-st.markdown("""<h3>Example </h3>
+c1.markdown("""<h3>Example </h3>
 If we want to check and print the length of a list:""",unsafe_allow_html=True)
 
 code = '''mylist = [1,2,3]
 if(l := len(mylist) > 2):
     print(l)'''
-st.code(code, language='python')
+c1.code(code, language='python')
 
-st.markdown("<strong>Output</strong>",unsafe_allow_html=True)
-st.code("3")
+c1.markdown("<strong>Output</strong>",unsafe_allow_html=True)
+c1.code("3")
 
-st.write(""" ## 2. Splitting a string
+c2.write(""" ## 2. Splitting a string
 If you want to split the components of a string into a list you can do that easily
 using the split() function in python. This will make the string operations a lot easier!
 """)
-st.markdown(""" <h3>Example </h3>""",unsafe_allow_html=True)
+c2.markdown(""" <h3>Example </h3>""",unsafe_allow_html=True)
 code = '''string = “hello world”
 string.split()'''
-st.code(code, language='python')
-st.markdown("""<strong>Output</strong>""",unsafe_allow_html=True)
-st.code("[‘hello’, ‘world’]")
+c2.code(code, language='python')
+c2.markdown("""<strong>Output</strong>""",unsafe_allow_html=True)
+c2.code("[‘hello’, ‘world’]")
 
 st.write(""" ## 3. Reversing a string
 If you want to reverse a given string, you can do that with only one line of code using
