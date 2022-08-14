@@ -28,7 +28,7 @@ will definitely save you some valuable time.
 st.write(" ## 1. Walrus operator")
 
 st.markdown(""" <h2>Example </h2>
-If we want to check and print the length of a list:""")
+If we want to check and print the length of a list:""",unsafe_allow_html=True)
 
 code = '''mylist = [1,2,3]
 if(l := len(mylist) > 2):
