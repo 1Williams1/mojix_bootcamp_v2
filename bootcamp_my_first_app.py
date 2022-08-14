@@ -1,5 +1,5 @@
 import streamlit as st
-from PIL import Image
+
 
 
 st.write(""" ## 10 Cool Beginner Python Tricks That Will Make Your Life Easier
@@ -8,9 +8,12 @@ st.write(""" ## 10 Cool Beginner Python Tricks That Will Make Your Life Easier
 
 """)
 
-image = Image.open('https://miro.medium.com/max/700/1*5IFgojJ4nU8f0YKTcjWDrg.jpeg')
-
-st.image(image, caption='Sunrise by the mountains')
+st.markdown('''
+    <a href="https://docs.streamlit.io">
+        <img src="https://miro.medium.com/max/700/1*5IFgojJ4nU8f0YKTcjWDrg.jpeg" />
+    </a>''',
+    unsafe_allow_html=True
+)
 
 """ c1 = st.columns([8])
 c1.caption("https://miro.medium.com/max/700/1*5IFgojJ4nU8f0YKTcjWDrg.jpeg") """
