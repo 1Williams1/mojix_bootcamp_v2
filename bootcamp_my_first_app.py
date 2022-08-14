@@ -62,3 +62,31 @@ st.code(code, language='python')
 st.markdown("""<strong>Output</strong>""",unsafe_allow_html=True)
 st.code("!dlrow olleh")
 
+st.write(""" ## 4. Merging two dictionaries
+This amazing trick will help you merge two dictionaries with just 1 line of code.
+We just need to use ** in front of the name of the two dictionaries like below two merge 
+them into a single dictionary:
+""")
+st.markdown(""" <h3>Example </h3>""",unsafe_allow_html=True)
+code = '''d1 = {“a”: 10, “b”:20}
+d2 = {“c”: 30, “d”:40}
+d3 = {**d1, **d2}
+print(d3)'''
+st.code(code, language='python')
+st.markdown("""<strong>Output</strong>""",unsafe_allow_html=True)
+st.code("{‘a’: 10, ‘b’: 20, ‘c’: 30, ‘d’: 40}")
+
+st.write(""" ## 5. The zip() function
+The zip() function in python can make your life a lot easier when working with lists and
+dictionaries. It is used to combine several lists of the same length.
+""")
+st.markdown(""" <h3>Example </h3>""",unsafe_allow_html=True)
+code = '''colour = [“red”, “yellow”, “green”]
+fruits = [‘apple’, ‘banana’, ‘mango’]
+for colour, fruits in zip(colour, fruits):
+print(colour, fruits)'''
+st.code(code, language='python')
+st.markdown("""<strong>Output</strong>""",unsafe_allow_html=True)
+st.code("""red apple
+yellow banana
+green mango""")
