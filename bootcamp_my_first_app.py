@@ -1,7 +1,5 @@
 import streamlit as st
 
-c1, c2 = st.columns([5, 5])
-
 st.write(""" # 10 Cool Beginner Python Tricks That Will Make Your Life Easier
 
  Simple but effective tips for every python lovers
@@ -26,6 +24,7 @@ helpful for beginners to write more compact code. Knowing these tips and tricks
 will definitely save you some valuable time.
 """)
 
+c1, c2 = st.columns([5, 5])
 c1.write(" ## 1. Walrus operator")
 
 c1.markdown("""<h3>Example </h3>
