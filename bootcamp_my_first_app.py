@@ -27,7 +27,8 @@ will definitely save you some valuable time.
 
 st.write(" ## 1. Walrus operator")
 
-st.info(" Example")
+st.markdown(""" <h2>Example </h2>
+If we want to check and print the length of a list:""")
 
 code = '''mylist = [1,2,3]
 if(l := len(mylist) > 2):
