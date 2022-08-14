@@ -37,3 +37,17 @@ st.code(code, language='python')
 
 st.write("Output")
 st.code("3")
+
+st.write(""" ## 2. Splitting a string
+If you want to split the components of a string into a list you can do that easily
+using the split() function in python. This will make the string operations a lot easier!
+""")
+
+st.markdown(""" <h2>Example </h2>""",unsafe_allow_html=True)
+
+code = '''string = “hello world”
+string.split()'''
+st.code(code, language='python')
+
+st.write("Output")
+st.code("[‘hello’, ‘world’]")
